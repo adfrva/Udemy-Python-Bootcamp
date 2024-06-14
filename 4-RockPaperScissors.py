@@ -15,13 +15,17 @@ while exitLoop == 0:
     if userChoice == "Exit":
         exitLoop = 1
 
-    if userChoice == computerChoice:
+    if userChoice.lower() == computerChoice.lower():
         print("Its a tie!")
-    elif userChoice == "Rock" and computerChoice == "Paper":
-        print("You win!")
-    elif userChoice == "Paper" and computerChoice == "Rock":
-        print("You Win!")
-    elif userChoice == "Scissors" and computerChoice == "Paper":
-        print("You Win!")
+
+    elif userChoice.lower() == "rock" and computerChoice == "Paper":
+        print("You win! The computer chose " + computerChoice)
+
+    elif userChoice.lower() == "paper" and computerChoice == "Rock":
+        print("You Win! The computer chose " + computerChoice)
+
+    elif userChoice.lower() == "scissors" and computerChoice == "Paper":
+        print("You Win! The computer chose " + computerChoice)
+
     else:
-        print("You Lose :(")
+        print("You Lose :( The computer chose " + computerChoice)
