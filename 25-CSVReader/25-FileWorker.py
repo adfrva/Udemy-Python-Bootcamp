@@ -30,3 +30,15 @@ print(f"Total number of temps recorded: {total_temps}")
 average_temp = total_sum/total_temps
 
 print(f"Average temperature: {average_temp}")
+
+
+
+#Creating a new dataframe with dictionary
+new_data = {
+    "students": ["Gerald", "Minnie", "Pookie"],
+    "Scores": ["75", "33", "102"]
+}
+
+new_frame = pandas.DataFrame(new_data)
+
+print(new_frame["students"])
